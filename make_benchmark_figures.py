@@ -1,5 +1,5 @@
 from pathlib import Path
-import csv, math
+import csv
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt

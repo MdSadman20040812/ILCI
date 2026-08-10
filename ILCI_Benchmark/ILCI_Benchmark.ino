@@ -19,7 +19,6 @@
 
 #include <Arduino.h>
 #include <avr/io.h>
-#include <avr/interrupt.h>
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
@@ -27,16 +26,11 @@
 // ---------------------------------------------------------------------------
 // Timing helpers
 // ---------------------------------------------------------------------------
-static inline uint32_t micros32(void) {
-  return micros();
-}
-
 static inline uint16_t cycles_now(void) {
   return TCNT1;
 }
 
 static void cycles_init(void) {
-  // Timer1: normal mode, prescaler = 1, 16 MHz => 1 cycle = 62.5 ns
   TCCR1A = 0;
   TCCR1B = _BV(CS10);
   TCNT1 = 0;
@@ -110,8 +104,9 @@ void init_ilci(float *w, uint16_t rows, uint16_t cols) {
 // ---------------------------------------------------------------------------
 // Activation helpers
 // ---------------------------------------------------------------------------
-static inline float relu(float x) {
-  return x > 0.0f ? x : 0.0f;
+static inline float tanhf_fast(float x) {
+  float e = expf(-2.0f * x);
+  return (1.0f - e) / (1.0f + e);
 }
 
 static inline float sigmoid(float x) {
@@ -205,9 +200,9 @@ static void mlp_init(struct TinyMLP *m, uint16_t in, uint16_t h, uint16_t out,
   m->W2 = (float*)malloc(h * out * sizeof(float));
   m->b2 = (float*)malloc(out * sizeof(float));
   init_fn(m->W1, in, h);
-  memset(m->b1, 0, h * sizeof(float));
+  for (uint16_t i = 0; i < h; i++) m->b1[i] = 0.0f;
   init_fn(m->W2, h, out);
-  memset(m->b2, 0, out * sizeof(float));
+  for (uint16_t i = 0; i < out; i++) m->b2[i] = 0.0f;
 }
 
 static void mlp_free(struct TinyMLP *m) {
@@ -219,7 +214,7 @@ static void mlp_forward(const struct TinyMLP *m, const float *x, float *out) {
   for (uint16_t j = 0; j < m->h; j++) {
     float s = m->b1[j];
     for (uint16_t i = 0; i < m->in; i++) s += x[i] * m->W1[i * m->h + j];
-    h[j] = relu(s);
+    h[j] = tanhf_fast(s);
   }
   for (uint16_t j = 0; j < m->out; j++) {
     float s = m->b2[j];
@@ -233,7 +228,7 @@ static float train_step(struct TinyMLP *m, const float *x, const float *tgt) {
   for (uint16_t j = 0; j < m->h; j++) {
     float s = m->b1[j];
     for (uint16_t i = 0; i < m->in; i++) s += x[i] * m->W1[i * m->h + j];
-    ho[j] = h[j] = relu(s);
+    ho[j] = h[j] = tanhf_fast(s);
   }
   for (uint16_t j = 0; j < m->out; j++) {
     float s = m->b2[j];
@@ -249,7 +244,7 @@ static float train_step(struct TinyMLP *m, const float *x, const float *tgt) {
   for (uint16_t i = 0; i < m->h; i++) {
     float s = 0.0f;
     for (uint16_t j = 0; j < m->out; j++) s += m->W2[i * m->out + j] * go[j];
-    gh[i] = s * (ho[i] > 0.0f ? 1.0f : 0.0f);
+    gh[i] = s * (1.0f - ho[i] * ho[i]);
   }
   for (uint16_t i = 0; i < m->h; i++) {
     for (uint16_t j = 0; j < m->out; j++) {
@@ -291,7 +286,7 @@ static void run_task(const char *task,
 
   for (uint16_t run = 0; run < 3; run++) {
     struct TinyMLP m;
-    mlp_init(&m, in, h, out, init_fn, 0.3f);
+    mlp_init(&m, in, h, out, init_fn, 0.1f);
     for (uint16_t ep = 0; ep < epochs; ep++) {
       float epoch_loss = 0.0f;
       for (uint16_t s = 0; s < samples; s++) {
@@ -352,17 +347,17 @@ void setup() {
 
   Serial.println(F("init,task,matrix_shape,cycles_per_weight,flash_bytes,epoch,final_loss,accuracy"));
 
-  run_task("XOR", load_xor_sample, 4, 2, 2, 1, 60, init_std_random);
-  run_task("XOR", load_xor_sample, 4, 2, 2, 1, 60, init_gaussian);
-  run_task("XOR", load_xor_sample, 4, 2, 2, 1, 60, init_ilci);
+  run_task("XOR", load_xor_sample, 4, 2, 2, 1, 120, init_std_random);
+  run_task("XOR", load_xor_sample, 4, 2, 2, 1, 120, init_gaussian);
+  run_task("XOR", load_xor_sample, 4, 2, 2, 1, 120, init_ilci);
 
-  run_task("Iris", load_iris_sample, 12, 4, 4, 3, 80, init_std_random);
-  run_task("Iris", load_iris_sample, 12, 4, 4, 3, 80, init_gaussian);
-  run_task("Iris", load_iris_sample, 12, 4, 4, 3, 80, init_ilci);
+  run_task("Iris", load_iris_sample, 12, 4, 4, 3, 120, init_std_random);
+  run_task("Iris", load_iris_sample, 12, 4, 4, 3, 120, init_gaussian);
+  run_task("Iris", load_iris_sample, 12, 4, 4, 3, 120, init_ilci);
 
-  run_task("ECG", load_ecg_sample, 20, 8, 8, 3, 80, init_std_random);
-  run_task("ECG", load_ecg_sample, 20, 8, 8, 3, 80, init_gaussian);
-  run_task("ECG", load_ecg_sample, 20, 8, 8, 3, 80, init_ilci);
+  run_task("ECG", load_ecg_sample, 20, 8, 8, 3, 120, init_std_random);
+  run_task("ECG", load_ecg_sample, 20, 8, 8, 3, 120, init_gaussian);
+  run_task("ECG", load_ecg_sample, 20, 8, 8, 3, 120, init_ilci);
 
   Serial.println(F("DONE"));
 }
