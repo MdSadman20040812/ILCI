@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.10)  10 AUG 2026 19:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.10)  10 AUG 2026 19:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -559,17 +559,17 @@ Overfull \hbox (19.95059pt too wide) in paragraph at lines 126--146
  []
 
 
-LaTeX Warning: File `figs/fig_loss_curves.png' not found on input line 153.
+LaTeX Warning: File `figs/fig_loss_curves.pdf' not found on input line 153.
 
 
-! Package pdftex.def Error: File `figs/fig_loss_curves.png' not found: using dr
+! Package pdftex.def Error: File `figs/fig_loss_curves.pdf' not found: using dr
 aft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.153 ...dth=\linewidth]{figs/fig_loss_curves.png}
+l.153 ...dth=\linewidth]{figs/fig_loss_curves.pdf}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -580,34 +580,34 @@ LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 
-LaTeX Warning: File `figs/fig_accuracy_curves.png' not found on input line 160.
+LaTeX Warning: File `figs/fig_accuracy_curves.pdf' not found on input line 160.
 
 
 
-! Package pdftex.def Error: File `figs/fig_accuracy_curves.png' not found: usin
+! Package pdftex.def Error: File `figs/fig_accuracy_curves.pdf' not found: usin
 g draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.160 ...\linewidth]{figs/fig_accuracy_curves.png}
+l.160 ...\linewidth]{figs/fig_accuracy_curves.pdf}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `figs/fig_summary_bars.png' not found on input line 170.
+LaTeX Warning: File `figs/fig_summary_bars.pdf' not found on input line 170.
 
 
-! Package pdftex.def Error: File `figs/fig_summary_bars.png' not found: using d
+! Package pdftex.def Error: File `figs/fig_summary_bars.pdf' not found: using d
 raft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.170 ...th=\linewidth]{figs/fig_summary_bars.png}
+l.170 ...th=\linewidth]{figs/fig_summary_bars.pdf}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -663,7 +663,7 @@ Users/binma/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C
 C:/Users/binma/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><
 C:/Users/binma/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
 
-Output written on ilci_paper.pdf (4 pages, 197433 bytes).
+Output written on ilci_paper.pdf (4 pages, 197415 bytes).
 PDF statistics:
  216 PDF objects out of 1000 (max. 8388607)
  47 named destinations out of 1000 (max. 500000)
