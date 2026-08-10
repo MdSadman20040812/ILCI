@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.10)  10 AUG 2026 19:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.10)  10 AUG 2026 19:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -439,8 +439,14 @@ Package hyperref Info: Link coloring OFF on input line 9.
 \@outlinefile=\write3
 \openout3 = `ilci_paper.out'.
 
- [1{C:/Users/binma/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/b
-inma/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 3
+5.
+
+(C:\Users\binma\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+[1{C:/Users/binma/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/bi
+nma/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
 ]
@@ -448,104 +454,10 @@ Underfull \hbox (badness 1394) in paragraph at lines 60--61
 \OT1/ptm/m/n/10 which de-feats the pur-pose of op-ti-miza-tion by re-quir-ing
  []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.62 ...), this is efficiently computed via the `_
-                                                  _builtin_clz` intrinsic:
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-! Missing { inserted.
-<to be read again> 
-                   _
-l.62 ..., this is efficiently computed via the `__
-                                                  builtin_clz` intrinsic:
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-
-! LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.63 \begin{equation}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! You can't use `\eqno' in math mode.
-\veqno ->\@kernel@eqno 
-                       \aftergroup \ignorespaces 
-l.65 \end{equation}
-                   
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.65 \end{equation}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.65 \end{equation}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-! LaTeX Error: \begin{document} ended by \end{equation}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.65 \end{equation}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.65 \end{equation}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.65 \end{equation}
-                   
-Things are pretty mixed up, but I think the worst is over.
-
-
-Underfull \hbox (badness 1515) in paragraph at lines 89--90
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 []\OT1/ptm/b/n/10 Std Ran-dom\OT1/ptm/m/n/10 : Lin-ear Con-gru-en-tial Gen-er-a
--tor (`ran-
+-tor
  []
 
 
@@ -558,66 +470,27 @@ Overfull \hbox (19.95059pt too wide) in paragraph at lines 126--146
  [][] 
  []
 
-
-LaTeX Warning: File `figs/fig_loss_curves.pdf' not found on input line 153.
-
-
-! Package pdftex.def Error: File `figs/fig_loss_curves.pdf' not found: using dr
-aft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.153 ...dth=\linewidth]{figs/fig_loss_curves.pdf}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
-53.
-(C:\Users\binma\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-
-LaTeX Warning: File `figs/fig_accuracy_curves.pdf' not found on input line 160.
-
-
-
-! Package pdftex.def Error: File `figs/fig_accuracy_curves.pdf' not found: usin
-g draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.160 ...\linewidth]{figs/fig_accuracy_curves.pdf}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `figs/fig_summary_bars.pdf' not found on input line 170.
-
-
-! Package pdftex.def Error: File `figs/fig_summary_bars.pdf' not found: using d
-raft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.170 ...th=\linewidth]{figs/fig_summary_bars.pdf}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[2]
+<figs/fig_loss_curves.pdf, id=114, 535.21182pt x 167.21034pt>
+File: figs/fig_loss_curves.pdf Graphic file (type pdf)
+<use figs/fig_loss_curves.pdf>
+Package pdftex.def Info: figs/fig_loss_curves.pdf  used on input line 153.
+(pdftex.def)             Requested size: 252.0pt x 78.72919pt.
+<figs/fig_accuracy_curves.pdf, id=115, 535.37576pt x 167.21034pt>
+File: figs/fig_accuracy_curves.pdf Graphic file (type pdf)
+<use figs/fig_accuracy_curves.pdf>
+Package pdftex.def Info: figs/fig_accuracy_curves.pdf  used on input line 160.
+(pdftex.def)             Requested size: 252.0pt x 78.70622pt.
+<figs/fig_summary_bars.pdf, id=116, 529.51892pt x 209.82178pt>
+File: figs/fig_summary_bars.pdf Graphic file (type pdf)
+<use figs/fig_summary_bars.pdf>
+Package pdftex.def Info: figs/fig_summary_bars.pdf  used on input line 170.
+(pdftex.def)             Requested size: 252.0pt x 99.85527pt.
+[2 <./figs/fig_loss_curves.pdf>]
 Underfull \hbox (badness 3919) in paragraph at lines 186--188
 []\OT1/ptm/m/n/10 The bench-mark dataset, Ar-duino firmware, and fig-
  []
 
-[3]
+(ilci_paper.bbl)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -629,9 +502,8 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4
-
-] (ilci_paper.aux)
+[3 <./figs/fig_accuracy_curves.pdf> <./figs/fig_summary_bars.pdf>]
+(ilci_paper.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -640,32 +512,29 @@ Package rerunfilecheck Info: File `ilci_paper.out' has not changed.
 (rerunfilecheck)             Checksum: 9E21BDF8BFBF9D1AFEAEB57C76A4088F;2492.
  ) 
 Here is how much of TeX's memory you used:
- 10409 strings out of 467871
- 167382 string characters out of 5418376
+ 10351 strings out of 467871
+ 165169 string characters out of 5418376
  596566 words of memory out of 5000000
- 39129 multiletter control sequences out of 15000+600000
- 665375 words of font info for 105 fonts, out of 8000000 for 9000
+ 39070 multiletter control sequences out of 15000+600000
+ 664297 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,79p,1378b,581s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,10n,79p,1378b,444s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/binma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmex10.pfb><C:/Users/binma/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmmi10.pfb><C:/Users/binma/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmmi5.pfb><C:/Users/binma/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/binma/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/binma/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/binma/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/binma/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bi
-nma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/
-Users/binma/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C
-:/Users/binma/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C
-:/Users/binma/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><
-C:/Users/binma/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><
-C:/Users/binma/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-
-Output written on ilci_paper.pdf (4 pages, 197415 bytes).
+ublic/amsfonts/cm/cmmi7.pfb><C:/Users/binma/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/binma/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/binma/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/binma/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/binma/App
+Data/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/binma/A
+ppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/binma/A
+ppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/binma/
+AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/binma/
+AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ilci_paper.pdf (3 pages, 264099 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
- 153 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 458 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 500000)
+ 168 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: ilci_paper.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: IEEEtran.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: ilci_paper.bib
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in sprott2020collatz
+
+Done.
+You've used 8 entries,
+            4087 wiz_defined-function locations,
+            859 strings with 8141 characters,
+and the built_in function-call counts, 3380 in all, are:
+= -- 234
+> -- 68
+< -- 0
++ -- 32
+- -- 16
+* -- 147
+:= -- 587
+add.period$ -- 16
+call.type$ -- 8
+change.case$ -- 7
+chr.to.int$ -- 0
+cite$ -- 9
+duplicate$ -- 284
+empty$ -- 373
+format.name$ -- 20
+if$ -- 763
+int.to.chr$ -- 0
+int.to.str$ -- 8
+missing$ -- 55
+newline$ -- 47
+num.names$ -- 8
+pop$ -- 158
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 269
+stack$ -- 0
+substring$ -- 8
+swap$ -- 145
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 8
+warning$ -- 1
+while$ -- 8
+width$ -- 9
+write$ -- 84
+(There was 1 warning)
