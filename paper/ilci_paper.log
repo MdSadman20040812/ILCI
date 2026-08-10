@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.10)  10 AUG 2026 19:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.10)  10 AUG 2026 19:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -300,6 +300,50 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip54
 )
+Package hyperref Info: Option `colorlinks' set `false' on input line 12.
+
+
+! Package hyperref Error: This color specification is not supported
+(hyperref)                without package `xcolor' in
+(hyperref)                `linkbordercolor=white'.
+
+See the hyperref package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 }
+      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package hyperref Error: This color specification is not supported
+(hyperref)                without package `xcolor' in
+(hyperref)                `citebordercolor=white'.
+
+See the hyperref package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 }
+      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package hyperref Error: This color specification is not supported
+(hyperref)                without package `xcolor' in
+(hyperref)                `urlbordercolor=white'.
+
+See the hyperref package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 }
+      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 (C:\Users\binma\AppData\Local\Programs\MiKTeX\tex/latex/cite\cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
@@ -380,24 +424,24 @@ File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 ) (ilci_paper.aux)
 \openout1 = `ilci_paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 
 -- Lines per column: 56 (exact).
 
@@ -434,13 +478,13 @@ G,.JBIG2,.JB2,.eps]
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 9.
+Package hyperref Info: Link coloring OFF on input line 16.
  (ilci_paper.out) (ilci_paper.out)
 \@outlinefile=\write3
 \openout3 = `ilci_paper.out'.
 
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 3
-5.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 4
+2.
 
 (C:\Users\binma\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
@@ -450,43 +494,43 @@ nma/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-Underfull \hbox (badness 1394) in paragraph at lines 60--61
+Underfull \hbox (badness 1394) in paragraph at lines 67--68
 \OT1/ptm/m/n/10 which de-feats the pur-pose of op-ti-miza-tion by re-quir-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 []\OT1/ptm/b/n/10 Std Ran-dom\OT1/ptm/m/n/10 : Lin-ear Con-gru-en-tial Gen-er-a
 -tor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 []\OT1/ptm/b/n/10 Gaussian\OT1/ptm/m/n/10 : Box-Muller Trans-form
  []
 
 
-Overfull \hbox (19.95059pt too wide) in paragraph at lines 126--146
+Overfull \hbox (19.95059pt too wide) in paragraph at lines 133--153
  [][] 
  []
 
 <figs/fig_loss_curves.pdf, id=114, 535.21182pt x 167.21034pt>
 File: figs/fig_loss_curves.pdf Graphic file (type pdf)
 <use figs/fig_loss_curves.pdf>
-Package pdftex.def Info: figs/fig_loss_curves.pdf  used on input line 153.
+Package pdftex.def Info: figs/fig_loss_curves.pdf  used on input line 160.
 (pdftex.def)             Requested size: 252.0pt x 78.72919pt.
 <figs/fig_accuracy_curves.pdf, id=115, 535.37576pt x 167.21034pt>
 File: figs/fig_accuracy_curves.pdf Graphic file (type pdf)
 <use figs/fig_accuracy_curves.pdf>
-Package pdftex.def Info: figs/fig_accuracy_curves.pdf  used on input line 160.
+Package pdftex.def Info: figs/fig_accuracy_curves.pdf  used on input line 167.
 (pdftex.def)             Requested size: 252.0pt x 78.70622pt.
 <figs/fig_summary_bars.pdf, id=116, 529.51892pt x 209.82178pt>
 File: figs/fig_summary_bars.pdf Graphic file (type pdf)
 <use figs/fig_summary_bars.pdf>
-Package pdftex.def Info: figs/fig_summary_bars.pdf  used on input line 170.
+Package pdftex.def Info: figs/fig_summary_bars.pdf  used on input line 177.
 (pdftex.def)             Requested size: 252.0pt x 99.85527pt.
 [2 <./figs/fig_loss_curves.pdf>]
-Underfull \hbox (badness 3919) in paragraph at lines 186--188
+Underfull \hbox (badness 3919) in paragraph at lines 193--195
 []\OT1/ptm/m/n/10 The bench-mark dataset, Ar-duino firmware, and fig-
  []
 
@@ -514,7 +558,7 @@ Package rerunfilecheck Info: File `ilci_paper.out' has not changed.
 Here is how much of TeX's memory you used:
  10351 strings out of 467871
  165169 string characters out of 5418376
- 596566 words of memory out of 5000000
+ 596562 words of memory out of 5000000
  39070 multiletter control sequences out of 15000+600000
  664297 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -532,7 +576,7 @@ ppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/binma/A
 ppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/binma/
 AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/binma/
 AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ilci_paper.pdf (3 pages, 264099 bytes).
+Output written on ilci_paper.pdf (3 pages, 264171 bytes).
 PDF statistics:
  458 PDF objects out of 1000 (max. 8388607)
  46 named destinations out of 1000 (max. 500000)
