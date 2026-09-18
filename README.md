@@ -1,92 +1,38 @@
-![ILCI](https://img.shields.io/badge/ILCI-Local%20Cluster%20Intelligence-2563eb?style=for-the-badge)
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.0-EE4C2C?style=flat-square&logo=pytorch)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+![ILCI — Integer-Only Logarithmic Collatz Initialization](docs/visuals/header.png)
 
-**Local Cluster Intelligence — distributed ML training and inference on commodity hardware.**
+# ILCI
 
----
+An Arduino Uno / ATmega328P benchmark comparing standard random, Gaussian and integer-based Collatz weight initialization. The repository includes firmware, recorded CSV output, figures and a paper.
 
-## 📊 Benchmarks
+**[Source guide](#source-guide)** · **[Getting started](#getting-started)** · **[Scope & limitations](#scope--limitations)**
 
-| Dataset | Metric | Score |
-|---------|--------|-------|
-| CIFAR-10 | Accuracy | 94.2% |
-| CIFAR-100 | Accuracy | 74.8% |
-| Tiny-ImageNet | Top-1 | 62.3% |
+## Preview
 
-> Repository figure; not rerun in this documentation refresh.
+[![Existing repository accuracy plot. See the CSV and firmware for task definitions.](figs/fig_accuracy_boxplot.png)](figs/fig_accuracy_boxplot.png)
 
-![Accuracy boxplot](figs/fig_accuracy_boxplot.png)
-*Figure 1: Accuracy distribution across 5 seeds.*
+Existing repository accuracy plot. See the CSV and firmware for task definitions.
 
-![Training curves](figs/fig_loss_curves.png)
-*Figure 2: Training and validation loss curves.*
+[Loss curves](figs/fig_loss_curves.png) · [Accuracy curves](figs/fig_accuracy_curves.png) · [Summary figure](figs/fig_summary_bars.png)
 
-![Accuracy curves](figs/fig_accuracy_curves.png)
-*Figure 3: Top-1 accuracy progression over epochs.*
+## Source guide
 
-![Summary bars](figs/fig_summary_bars.png)
-*Figure 4: Summary comparison across methods.*
+[![Repository components and their source paths](docs/visuals/repository-guide.png)](docs/visuals/repository-guide.png)
 
----
+| Component | Open source | Purpose |
+| :-- | :-- | :-- |
+| Firmware | [`ILCI_Benchmark/ILCI_Benchmark.ino`](ILCI_Benchmark/ILCI_Benchmark.ino) | Initializer implementations and benchmark tasks. |
+| Recorded data | [`data/ilci_benchmark_raw.csv`](data/ilci_benchmark_raw.csv) | Serial-output benchmark records. |
+| Figures | [`figs`](figs) | Accuracy, loss and summary plots. |
+| Paper | [`paper/ilci_paper.pdf`](paper/ilci_paper.pdf) | Research manuscript and supporting files. |
 
-## 🏗️ Architecture
+## Getting started
 
-```mermaid
-graph LR
-    subgraph Cluster
-        N1[Node 1<br/>GPU 0]
-        N2[Node 2<br/>GPU 1]
-        N3[Node 3<br/>GPU 2]
-    end
-    N1 <-->|NCCL| N2
-    N2 <-->|NCCL| N3
-    N3 <-->|NCCL| N1
-    N1 --> R[Reduce Scatter]
-    N2 --> R
-    N3 --> R
-    R --> O[Optimizer<br/>AllReduce]
-    O --> N1
-    O --> N2
-    O --> N3
-```
+Use the linked source files and project documents above as the entry points. Review the prerequisites and limitations below before execution.
+
+## Scope & limitations
+
+The firmware names XOR, Iris-2 and simplified ECG-20 tasks. This is not a distributed-training framework. Existing research figures are reproduced as repository artifacts; the benchmarks were not rerun or independently validated in this presentation update.
 
 ---
 
-## ✨ Features
-
-- **Multi-GPU data-parallel training** with NCCL backend
-- **Deterministic seeding** for reproducible experiments
-- **Checkpoint resume** with full state restoration
-- **Per-seed logging** — every run is auditable
-- **Dataset-agnostic** dataloaders — swap CIFAR/Tiny-ImageNet/Custom
-
----
-
-## 🚀 Quick Start
-
-```bash
-pip install -r requirements.txt
-torchrun --nproc_per_node=3 train.py --dataset cifar10 --epochs 200
-```
-
----
-
-## 📁 Project Structure
-
-```
-ILCI/
-├── figs/                          # Result figures (4 plots)
-├── paper/                         # LaTeX paper source
-├── submission/                    # NeurIPS/ICML submission bundle
-├── train.py                       # Distributed training entry
-├── model.py                       # Model definitions
-└── requirements.txt
-```
-
----
-
-## 📄 License
-
-MIT © Md Sadman Bin Masud
+[Visual asset sources and presentation notes](docs/visuals/README.md)
